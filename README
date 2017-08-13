@@ -1,0 +1,31 @@
+tetris keyboard firmware
+========================
+A keyboard that is also a tetris game.
+
+It works by outputting key-presses to make ascii-art in a regular text editor.
+It reads key presses to rotate and move the bricks like a regular tetris game.
+
+Example
+=======
+![tetris](https://raw.githubusercontent.com/danamlund/meckb_tetris/tetris.gif)
+
+Usage
+=====
+1) Open a default text editor
+2) Click the tetris button (top left key on this keyboard)
+3) Play tetris
+
+It makes ascii-art using left, right, up, down, home, end, qwerty characters, and numbers.
+
+Problems
+========
+Drawing ascii-art is too slow to make a plesent playing experience.
+While drawing ascii-art, the keyboard does not record key-presses, so its pretty unresponsive.
+
+Implement in other keyboards
+============================
+ - Copy-paste the files tetris_text.c and tetrix_text.h to your keyboard.
+ - Add/update you keyboard/rules.mk to include 'SRC = tetris_text.c'
+ - Copy-paste most of the code from tetris keymap.c to yours.
+ - Set a key to trigger F(0).
+
