@@ -7,7 +7,7 @@ It reads key presses to rotate and move the bricks like a regular tetris game.
 
 Example
 =======
-![tetris](https://raw.githubusercontent.com/danamlund/meckb_tetris/tetris.gif)
+![tetris](https://raw.githubusercontent.com/danamlund/meckb_tetris/master/tetris.gif)
 
 Usage
 =====
