@@ -2,7 +2,7 @@
 all: qmk_firmware build program
 
 qmk_firmware:
-	git clone https://github.com/qmk/qmk_firmware.git
+	git clone --depth=1 https://github.com/qmk/qmk_firmware.git
 
 build:
 	rm -Rf qmk_firmware/keyboards/tetris
