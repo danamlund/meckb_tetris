@@ -22,9 +22,6 @@ void tetris_send_left(void);
 void tetris_send_down(void);
 void tetris_send_right(void);
 
-void tetris_send_home(void);
-void tetris_send_end(void);
-
 void tetris_send_backspace(void);
 void tetris_send_delete(void);
 

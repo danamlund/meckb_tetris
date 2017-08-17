@@ -105,13 +105,6 @@ void tetris_send_right(void) {
   send_keycode(KC_RGHT);
 }
 
-void tetris_send_home(void) {
-  send_keycode(KC_HOME);
-}
-void tetris_send_end(void) {
-  send_keycode(KC_END);
-}
-
 void tetris_send_backspace(void) {
   send_keycode(KC_BSPC);
 }

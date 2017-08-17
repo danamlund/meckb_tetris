@@ -308,10 +308,8 @@ static void init(void) {
     draw_board_line();
   }
   tetris_send_string("doooooooooob");
-  tetris_send_home();
-  for (int i = 0; i < 20; i++) {
-    tetris_send_up();
-  }
+  curx = 12;
+  cury = 20;
 }
 
 static int get_piece_min_y(char piece[7][7]) {
@@ -397,9 +395,6 @@ void tetris_start(uint8_t seed) {
     }
   }
 
-  curx = 0;
-  cury = 0;
-  
   clear_piece(piece);
 
   init();
@@ -450,8 +445,7 @@ int tetris_tick(int ms_since_previous_tick) {
 
       if (is_piece_hitting(board, piece, x, y)) {
         game_over = 1;
-        send_goto_xy(2, 10);
-        tetris_send_end();
+        send_goto_xy(12, 10);
         tetris_send_string(" game over");
         tetris_send_down();
         tetris_send_string(" score ");
