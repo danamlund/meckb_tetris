@@ -7,7 +7,7 @@ qmk_firmware:
 build:
 	rm -Rf qmk_firmware/keyboards/tetris
 	cp -Rf tetris qmk_firmware/keyboards/
-	cd qmk_firmware/keyboards/tetris; make
+	cd qmk_firmware; make tetris
 
 program:
 # pro micro
